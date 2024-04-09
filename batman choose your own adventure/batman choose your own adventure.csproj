@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F3BC16E4-CFC7-4D09-9163-67C26B97D4F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>batman_choose_your_own_adventure</RootNamespace>
+    <AssemblyName>batman choose your own adventure</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\b42d7da5dc596806d14fb7652792ff2f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The-Batman-Batcycle-Hot-Toys-01__scaled_800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The-Batman-Batcycle-Hot-Toys-01__scaled_800 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\39e83b7c64294bef888da3f48616b2aa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\638e6e3f55839767c0289e2edcb2fdf5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7592136-fc2bf45e-4137-4848-be7a-b393e936e20f.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5vwgxga8sfh91.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ai-images-of-batman-fighting-goons-v0-z24fzdkpvjpb1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EMAlWZLwT0Gz4va06lZz--1--scrr0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MV5BMGQ1ZGZmNTAtM2MyYi00NmZhLTkwYmYtNTNlZDRhMzU2ZTgwXkEyXkFqcGdeQW1yb3NzZXI%40._V1_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0e8d00eff6441eb5c751c047aa4cb866.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\281fa43fd2bd563d588922c52fc15d088d8df934.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\intro-1680295131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mr._Freeze_-_New_52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\421268_462169547139042_1244995412_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wayne_Terminus_ 28The_Batcave 29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\697805839_orig.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a13d4d912340825439d6bc5f19182e66.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a13d4d912340825439d6bc5f19182e661.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thedarkknight17po4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rev_1_TBM_TRL_001_High_Res_JPEG.0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ec25ed1feb21d11fbacafb8a2b2c1fd3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8c8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ZFBMgnRJe5BZqiso7tmX-1-5s4j2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\why-does-penguin-carry-a-gun-doesnt-he-know-batman-will-v0-yuzd7x7unbsa1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0955aa8396b2b04c0169106b8a09873a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\impact_car_crash.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4417-0-14492118841.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zapsplat_nature_ice_freeze_object_timelapse_quick_002_29970.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zapsplat_sound_design_cinematic_whoosh_into_small_explosion_006_62769.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
