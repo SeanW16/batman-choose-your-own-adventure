@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.titleLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.option2Button = new System.Windows.Forms.Button();
@@ -73,7 +74,7 @@
             this.option2Button.FlatAppearance.BorderSize = 3;
             this.option2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option2Button.ForeColor = System.Drawing.Color.White;
-            this.option2Button.Location = new System.Drawing.Point(79, 360);
+            this.option2Button.Location = new System.Drawing.Point(107, 360);
             this.option2Button.Name = "option2Button";
             this.option2Button.Size = new System.Drawing.Size(138, 51);
             this.option2Button.TabIndex = 2;
@@ -87,7 +88,7 @@
             this.option1Button.FlatAppearance.BorderSize = 3;
             this.option1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option1Button.ForeColor = System.Drawing.Color.White;
-            this.option1Button.Location = new System.Drawing.Point(260, 360);
+            this.option1Button.Location = new System.Drawing.Point(296, 360);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(138, 51);
             this.option1Button.TabIndex = 3;
@@ -123,7 +124,7 @@
             this.option3Button.FlatAppearance.BorderSize = 3;
             this.option3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.option3Button.ForeColor = System.Drawing.Color.White;
-            this.option3Button.Location = new System.Drawing.Point(459, 360);
+            this.option3Button.Location = new System.Drawing.Point(472, 360);
             this.option3Button.Name = "option3Button";
             this.option3Button.Size = new System.Drawing.Size(138, 51);
             this.option3Button.TabIndex = 7;
@@ -157,6 +158,7 @@
             this.Controls.Add(this.option2Button);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.titleLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

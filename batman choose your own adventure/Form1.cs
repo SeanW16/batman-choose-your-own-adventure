@@ -10,6 +10,9 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Media;
 
+// Sean Woods
+// April/9th/2024
+// Choose your own adventurn game based off of the batman movies
 namespace batman_choose_your_own_adventure
 {
     public partial class Form1 : Form
@@ -23,7 +26,7 @@ namespace batman_choose_your_own_adventure
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            DisplayPage();
+            DisplayPage(); //setting variables
             startButton.Visible = false;
             option1Button.Visible = true;
             option2Button.Visible = true;
@@ -36,7 +39,7 @@ namespace batman_choose_your_own_adventure
 
         private void option1Button_Click(object sender, EventArgs e)
         {
-            if (page == 0)
+            if (page == 0) //laying out the order of the game if you press button one
             {
                 page = 26;
             }
@@ -162,7 +165,7 @@ namespace batman_choose_your_own_adventure
 
         private void option2Button_Click(object sender, EventArgs e)
         {
-            if (page == 0)
+            if (page == 0) //laying out the order of the game if you press button two
             {
                 page = 27;
             }
@@ -279,7 +282,7 @@ namespace batman_choose_your_own_adventure
 
         private void option3Button_Click(object sender, EventArgs e)
         {
-            if (page == 12)
+            if (page == 12) //laying out the order of the game if you press button two
             {
                 page = 22;
             }
@@ -288,7 +291,7 @@ namespace batman_choose_your_own_adventure
 
         private void DisplayPage()
         {
-            switch (page)
+            switch (page) //the different layouts and pictures/sounds on the different pages
             {
                 case 0:
                     outputLabel.Text = "You are the batman";
@@ -426,14 +429,20 @@ namespace batman_choose_your_own_adventure
                     pictureBox1.Image = Properties.Resources.clayfaceWin;
                     break;
                 case 19:
-                    outputLabel.Text = "The Joker gets away but you save the hostages, you made the morally corret choice";
+                    outputLabel.Text = "The Joker gets away but you save the hostages";
+                    Refresh();
+                    Thread.Sleep(1000);
+                    outputLabel.Text += "\nyou made the morally corret choice";
                     questionLabel.Text = "Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.jokerRunning;
                     break;
                 case 20:
-                    outputLabel.Text = "All the hosatges die and you capture the Joker, but at what cost?";
+                    outputLabel.Text = "All the hosatges die and you capture the Joker";
+                    Refresh();
+                    Thread.Sleep(1000);
+                    outputLabel.Text += "\nbut at what cost?";
                     questionLabel.Text = "Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
