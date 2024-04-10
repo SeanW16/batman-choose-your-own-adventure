@@ -1,6 +1,6 @@
 ﻿namespace batman_choose_your_own_adventure
 {
-    partial class Form1
+    partial class batmanHomeScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(batmanHomeScreen));
             this.titleLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.option2Button = new System.Windows.Forms.Button();
@@ -73,8 +73,9 @@
             this.option2Button.BackColor = System.Drawing.Color.Transparent;
             this.option2Button.FlatAppearance.BorderSize = 3;
             this.option2Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option2Button.Font = new System.Drawing.Font("Imprint MT Shadow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option2Button.ForeColor = System.Drawing.Color.White;
-            this.option2Button.Location = new System.Drawing.Point(107, 360);
+            this.option2Button.Location = new System.Drawing.Point(133, 360);
             this.option2Button.Name = "option2Button";
             this.option2Button.Size = new System.Drawing.Size(138, 51);
             this.option2Button.TabIndex = 2;
@@ -87,8 +88,9 @@
             this.option1Button.BackColor = System.Drawing.Color.Transparent;
             this.option1Button.FlatAppearance.BorderSize = 3;
             this.option1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option1Button.Font = new System.Drawing.Font("Imprint MT Shadow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option1Button.ForeColor = System.Drawing.Color.White;
-            this.option1Button.Location = new System.Drawing.Point(296, 360);
+            this.option1Button.Location = new System.Drawing.Point(300, 360);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(138, 51);
             this.option1Button.TabIndex = 3;
@@ -100,22 +102,22 @@
             // 
             this.outputLabel.AutoSize = true;
             this.outputLabel.BackColor = System.Drawing.Color.Black;
-            this.outputLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.outputLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.outputLabel.ForeColor = System.Drawing.Color.White;
-            this.outputLabel.Location = new System.Drawing.Point(33, 274);
+            this.outputLabel.Location = new System.Drawing.Point(33, 268);
             this.outputLabel.Name = "outputLabel";
-            this.outputLabel.Size = new System.Drawing.Size(0, 15);
+            this.outputLabel.Size = new System.Drawing.Size(0, 23);
             this.outputLabel.TabIndex = 5;
             // 
             // questionLabel
             // 
             this.questionLabel.AutoSize = true;
             this.questionLabel.BackColor = System.Drawing.Color.Black;
-            this.questionLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.questionLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.questionLabel.ForeColor = System.Drawing.Color.White;
             this.questionLabel.Location = new System.Drawing.Point(33, 322);
             this.questionLabel.Name = "questionLabel";
-            this.questionLabel.Size = new System.Drawing.Size(0, 15);
+            this.questionLabel.Size = new System.Drawing.Size(0, 23);
             this.questionLabel.TabIndex = 6;
             // 
             // option3Button
@@ -123,8 +125,9 @@
             this.option3Button.BackColor = System.Drawing.Color.Transparent;
             this.option3Button.FlatAppearance.BorderSize = 3;
             this.option3Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.option3Button.Font = new System.Drawing.Font("Imprint MT Shadow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.option3Button.ForeColor = System.Drawing.Color.White;
-            this.option3Button.Location = new System.Drawing.Point(472, 360);
+            this.option3Button.Location = new System.Drawing.Point(482, 360);
             this.option3Button.Name = "option3Button";
             this.option3Button.Size = new System.Drawing.Size(138, 51);
             this.option3Button.TabIndex = 7;
@@ -144,7 +147,7 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Visible = false;
             // 
-            // Form1
+            // batmanHomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -159,7 +162,7 @@
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.titleLabel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "batmanHomeScreen";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

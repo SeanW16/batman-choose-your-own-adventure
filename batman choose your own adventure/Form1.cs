@@ -15,11 +15,11 @@ using System.Media;
 // Choose your own adventurn game based off of the batman movies
 namespace batman_choose_your_own_adventure
 {
-    public partial class Form1 : Form
+    public partial class batmanHomeScreen : Form
     {
         int page = 0;
         Random randGen = new Random();
-        public Form1()
+        public batmanHomeScreen()
         {
             InitializeComponent();
         }
@@ -294,70 +294,74 @@ namespace batman_choose_your_own_adventure
             switch (page) //the different layouts and pictures/sounds on the different pages
             {
                 case 0:
-                    outputLabel.Text = "You are the batman";
+                    outputLabel.Text = "You are the batman.";
                     questionLabel.Text = "Go out tonight to patrol the streets?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.Batcycle;
                     break;
                 case 1:
-                    outputLabel.Text = "As your driving around you see a weird substance coming out of the sewer";
+                    outputLabel.Text = "As your driving around you see a weird substance coming out of the sewer.";
                     questionLabel.Text = "Explore the sewer?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.sewer;
                     break;
                 case 2:
-                    outputLabel.Text = "As your driving down a back alleyway the batcycle breaks down, as your fixing the engine a group of thugs sneak up on you";
+                    outputLabel.Text = "As your driving down a back alleyway the Batcycle breaks down,";
+                    outputLabel.Text += "\nas your fixing the engine a group of thugs sneak up on you.";
                     questionLabel.Text = "How do you deal with this situation?";
-                    option1Button.Text = "Fight them";
-                    option2Button.Text = "Escape to roof";
+                    option1Button.Text = "Fight them.";
+                    option2Button.Text = "Escape to roof.";
                     pictureBox1.Image = Properties.Resources.alley;
                     break;
                 case 3:
-                    outputLabel.Text = "You find one detaling how the joker took hostages at gotham bank";
+                    outputLabel.Text = "You find one detaling how the Joker took hostages at Gotham Bank.";
                     questionLabel.Text = "Leave to attack?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.jokerHostage;
                     break;
                 case 4:
-                    outputLabel.Text = "Your batsuit got broken on your last misson your fixing it when a loud boom comes from upstairs";
+                    outputLabel.Text = "Your batsuit got broken on your last misson your fixing";
+                    outputLabel.Text += "\nit when a loud boom comes from upstairs.";
                     questionLabel.Text = "What do you do?";
                     option1Button.Text = "Wait and find a weapon";
                     option2Button.Text = "Rush upstairs";
                     pictureBox1.Image = Properties.Resources.batsuit;
                     break;
                 case 5:
-                    outputLabel.Text = "Being the better fighter you easiler defeat your attackers";
+                    outputLabel.Text = "Being the better fighter you easily defeat your attackers.";
                     questionLabel.Text = "You win! Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.batmanFighting;
                     break;
                 case 6:
-                    outputLabel.Text = "Your rope breaks as your halfway up the wall and you fall backwards onto your enemies";
+                    outputLabel.Text = "Your rope breaks as your halfway up the wall and you";
+                    outputLabel.Text += "\nfall backwards onto your enemies.";
                     questionLabel.Text = "You lose. Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.batmanFalling;
                     break;
                 case 7:
-                    outputLabel.Text = "You get to the bank and the Joker is demanding a chance to talk to you";
+                    outputLabel.Text = "You get to the bank and the Joker is demanding a chance to talk to you.";
                     questionLabel.Text = "Agree to his demands?";
                     option1Button.Text = "No";
                     option2Button.Text = "Yes";
                     pictureBox1.Image = Properties.Resources.joker;
                     break;
                 case 8:
-                    outputLabel.Text = "Your not a true hero";
+                    outputLabel.Text = "Your not a true hero.";
                     questionLabel.Text = "You lose. Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.BatmanRain;
                     break;
                 case 9:
-                    outputLabel.Text = "Its the Penguin! he's trying to rob your safes, you use the grapping gun you found in the batcave to take him down and protect your money";
+                    outputLabel.Text = "Its the Penguin! he's trying to rob your safes, you use the grapping gun you"; 
+                    outputLabel.Text += "\nfound in the batcave to take him down and protect your money.";
                     questionLabel.Text = "You win! Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
@@ -379,67 +383,70 @@ namespace batman_choose_your_own_adventure
                     break;
                 case 12:
                     option3Button.Visible = true;
-                    outputLabel.Text = "Suddenly your car starts to slow down you look behind you and see Mr. Freeze is freezing your tires";
+                    outputLabel.Text = "Suddenly your car starts to slow down, you look behind you and see Mr. Freeze";
+                    outputLabel.Text += "\n is freezing your tires.";
                     questionLabel.Text = "What do you do?";
-                    option1Button.Text = "Get out and fight";
+                    option1Button.Text = "Get out and fight.";
                     option2Button.Text = "Reverse back at him";
-                    option3Button.Text = "Try and keep driving";
+                    option3Button.Text = "Try and keep driving.";
                     pictureBox1.Image = Properties.Resources.Mr_Freeze;
                     break;
                 case 13:
-                    outputLabel.Text = "The Joker triggers bombs and kills all the hostages and escapes into the smoke";
-                    questionLabel.Text = "You lose, Play agian?";
+                    outputLabel.Text = "The Joker triggers bombs, kills all the hostages and escapes into the smoke.";
+                    questionLabel.Text = "You lose. Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.jokerSmoke;
                     break;
                 case 14:
-                    outputLabel.Text = "Joker infects all the hostages with a deadly strain of the flu, he tells you that you can either save the hosatges or capture him";
+                    outputLabel.Text = "Joker infects all the hostages with a deadly strain of the flu,";
+                    outputLabel.Text += "\nhe tells you that you can either save the hosatges or capture him.";
                     questionLabel.Text = "Find the cure or capture Joker?";
-                    option1Button.Text = "Find the cure";
-                    option2Button.Text = "Capture the Joker";
+                    option1Button.Text = "Find the cure.";
+                    option2Button.Text = "Capture the Joker.";
                     pictureBox1.Image = Properties.Resources.batmanJoker;
                     break;
                 case 15:
-                    outputLabel.Text = "Your rush in to attack the Penguin but he shoots you throught the heart";
-                    questionLabel.Text = "You lose, Play agian?";
+                    outputLabel.Text = "You rush in to attack the Penguin but he shoots you throught the heart.";
+                    questionLabel.Text = "You lose. Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.PenguinGun;
                     break;
                 case 16:
-                    outputLabel.Text = "You retreat to the batcave but by the time you find a weapon and come back upstairs the penguin is already gone with all your money";
-                    questionLabel.Text = "You lose, Play agian?";
+                    outputLabel.Text = "You retreat to the batcave but by the time you find a weapon";
+                    outputLabel.Text += "\n and come back upstairs the penguin is already gone with all your money.";
+                    questionLabel.Text = "You lose. Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.batcave;
                     break;
                 case 17:
-                    outputLabel.Text = "Good job! you used the right weapon clayface froze to the ground";
+                    outputLabel.Text = "You used the right weapon clayface froze to the ground";
                     questionLabel.Text = "You win! Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.clayfaceFrozen;
                     break;
                 case 18:
-                    outputLabel.Text = "Oh no! your batarangs went right through Clayface";
-                    questionLabel.Text = "You lose, Play agian?";
+                    outputLabel.Text = "Your batarangs went right through Clayface.";
+                    questionLabel.Text = "You lose. Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.clayfaceWin;
                     break;
                 case 19:
-                    outputLabel.Text = "The Joker gets away but you save the hostages";
+                    outputLabel.Text = "The Joker gets away but you save the hostages,";
                     Refresh();
                     Thread.Sleep(1000);
-                    outputLabel.Text += "\nyou made the morally corret choice";
+                    outputLabel.Text += "\nbut you made the morally corret choice.";
                     questionLabel.Text = "Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     pictureBox1.Image = Properties.Resources.jokerRunning;
                     break;
                 case 20:
-                    outputLabel.Text = "All the hosatges die and you capture the Joker";
+                    outputLabel.Text = "All the hosatges die and you capture the Joker,";
                     Refresh();
                     Thread.Sleep(1000);
                     outputLabel.Text += "\nbut at what cost?";
@@ -449,8 +456,9 @@ namespace batman_choose_your_own_adventure
                     pictureBox1.Image = Properties.Resources.jokerCaptured;
                     break;
                 case 21:
-                    outputLabel.Text = "As your stepping out of the car Mr. Freeze throws a freeze bomb and freezes you in place";
-                    questionLabel.Text = "You lose, Play agian?";
+                    outputLabel.Text = "As your stepping out of the car Mr. Freeze throws a freeze bomb and";
+                    outputLabel.Text += "\nfreezes you in place.";
+                    questionLabel.Text = "You lose. Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     option3Button.Visible = false;
@@ -458,8 +466,8 @@ namespace batman_choose_your_own_adventure
                     player3.Play();
                     break;
                 case 22:
-                    outputLabel.Text = "Your car completly freezes with you inside";
-                    questionLabel.Text = " You lose, Play agian?";
+                    outputLabel.Text = "Your car completly freezes with you inside.";
+                    questionLabel.Text = "You lose. Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     option3Button.Visible = false;
@@ -467,7 +475,7 @@ namespace batman_choose_your_own_adventure
                     player2.Play();
                     break;
                 case 23:
-                    outputLabel.Text = "15% that his freeze gun malfunctions as your backing up at him";
+                    outputLabel.Text = "15% that his freeze gun malfunctions as your backing up at him.";
                     questionLabel.Text = "";
                     option1Button.Text = "Continue?";
                     option2Button.Text = "";
@@ -475,15 +483,15 @@ namespace batman_choose_your_own_adventure
                     pictureBox1.Image = Properties.Resources.freezeGun;
                     break;
                 case 24:
-                    outputLabel.Text = "Your car freezes completly with you insde, You lose";
-                    questionLabel.Text = "Play agian?";
+                    outputLabel.Text = "Your car freezes completly with you insde.";
+                    questionLabel.Text = "You lose. Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
                     option3Button.Visible = false;
                     pictureBox1.Image = Properties.Resources.batmanFrozen;
                     break;
                 case 25:
-                    outputLabel.Text = "you back up at hit him with your car knocking him unconsions";
+                    outputLabel.Text = "You back up at hit him with your car knocking him unconsious.";
                     questionLabel.Text = "You win! Play agian?";
                     option1Button.Text = "Yes";
                     option2Button.Text = "No";
@@ -492,22 +500,24 @@ namespace batman_choose_your_own_adventure
                     player.Play();
                     break;
                 case 26:
-                    outputLabel.Text = "you need a vechicle";
-                    questionLabel.Text = "Which vechicle do you select";
+                    outputLabel.Text = "You need a vechicle.";
+                    questionLabel.Text = "Which vechicle do you select?";
                     option1Button.Text = "Batmobile";
                     option2Button.Text = "Batcycle";
                     pictureBox1.Image = Properties.Resources.batmobile;
                     break;
                 case 27:
-                    outputLabel.Text = "what are you going to do instead";
-                    questionLabel.Text = "What do you choose";
-                    option1Button.Text = "look at recent police reports ";
-                    option2Button.Text = "fix your weapons";
+                    outputLabel.Text = "What are you going to do instead?";
+                    questionLabel.Text = "What do you choose?";
+                    option1Button.Text = "Look at recent police reports.";
+                    option2Button.Text = "Fix your weapons.";
                     pictureBox1.Image = Properties.Resources.bruceWayne;
                     break;
                 default:
                     break;
             }
         }
+
+  
     }
 }
